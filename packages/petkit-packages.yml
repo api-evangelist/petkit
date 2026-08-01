@@ -1,0 +1,38 @@
+generated: '2026-07-20'
+method: searched
+source: >-
+  PyPI registry lookups (pypi.org/pypi/<name>/json). PetKit publishes no
+  first-party client SDK. These are community, reverse-engineered libraries that
+  interface with PetKit's undocumented mobile-app backend; captured for
+  discoverability with official:false. No first-party SDK exists, so no SDKs
+  pointer is emitted.
+packages:
+- language: python
+  registry: pypi
+  name: pypetkitapi
+  url: https://pypi.org/project/pypetkitapi/
+  install: pip install pypetkitapi
+  source: https://github.com/Jezza34000/py-petkit-api
+  version: 1.28.0
+  official: false
+  note: >-
+    Actively maintained async Python client for PetKit's undocumented API;
+    powers the current community Home Assistant PetKit integration.
+- language: python
+  registry: pypi
+  name: petkitaio
+  url: https://pypi.org/project/petkitaio/
+  install: pip install petkitaio
+  source: https://github.com/RobertD502/petkitaio
+  version: 0.1.12
+  official: false
+  note: Asynchronous Python library for PetKit's API (feeders, litter boxes, purifiers, fountains).
+- language: python
+  registry: pypi
+  name: pypetkit
+  url: https://pypi.org/project/pypetkit/
+  install: pip install pypetkit
+  source: https://github.com/CrazYoshi/pypetkit
+  version: 0.0.4
+  official: false
+  note: Community PetKit python integration library.

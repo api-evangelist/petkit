@@ -1,0 +1,25 @@
+generated: '2026-07-20'
+method: searched
+source: live probe of https://petkit.com/.well-known/*
+host: https://petkit.com
+note: >-
+  petkit.com is served as a Shopify storefront. The OAuth/OIDC discovery
+  documents below are provided by Shopify's Customer Account API platform for
+  this shop (issuer shopify.com/authentication/56905269388, endpoints on
+  shop.petkit.com) — they are not a first-party PetKit developer API. PetKit
+  publishes no dedicated developer portal or public API surface.
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: petkit-openid-configuration.json
+  description: OpenID Connect discovery for the Shopify Customer Account API (petkit.com shop).
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: petkit-oauth-authorization-server.json
+  description: RFC 8414 OAuth Authorization Server metadata for the Shopify Customer Account API.
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
